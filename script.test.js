@@ -1,5 +1,5 @@
 import { capitalise } from "./script.js";
 
-test("works", () => {
-  expect(capitalise()).toBe("hi");
+test("hello to Hello", () => {
+  expect(capitalise("hello")).toBe("Hello");
 });
