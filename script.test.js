@@ -35,3 +35,11 @@ test("Multiply one negative number", () => {
 test("Multiply two negatives", () => {
   expect(calc.multiply(-7, -8)).toBe(56);
 });
+
+test("Divide positive numbers", () => {
+  expect(calc.divide(8, 2)).toBe(4);
+});
+
+test("Divide by 0", () => {
+  expect(calc.divide(7, 0)).toBeUndefined();
+});

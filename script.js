@@ -24,6 +24,9 @@ class Calculator {
     return nOne - nTwo;
   }
   divide(nOne, nTwo) {
+    if (nOne === 0 || nTwo === 0) {
+      return undefined;
+    }
     return nOne / nTwo;
   }
   multiply(nOne, nTwo) {
