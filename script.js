@@ -1,4 +1,4 @@
-export { capitalise, reverseString };
+export { capitalise, reverseString, calc };
 
 function capitalise(str) {
   const i = str.slice(0, 1).toUpperCase();
@@ -15,3 +15,19 @@ function reverseString(str) {
   }
   return temp.join("");
 }
+
+class Calculator {
+  add(nOne, nTwo) {
+    return nOne + nTwo;
+  }
+  subtract(nOne, nTwo) {
+    return nOne - nTwo;
+  }
+  divide(nOne, nTwo) {
+    return nOne / nTwo;
+  }
+  multiply(nOne, nTwo) {
+    return nOne * nTwo;
+  }
+}
+const calc = new Calculator();
