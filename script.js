@@ -1,4 +1,4 @@
-module.exports = capitalise;
+export { capitalise };
 
 function capitalise() {
   return "hi";

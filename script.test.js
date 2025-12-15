@@ -1,4 +1,4 @@
-const capitalise = require("./script.js");
+import { capitalise } from "./script.js";
 
 test("works", () => {
   expect(capitalise()).toBe("hi");
