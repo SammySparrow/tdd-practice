@@ -43,3 +43,11 @@ test("Divide positive numbers", () => {
 test("Divide by 0", () => {
   expect(calc.divide(7, 0)).toBeUndefined();
 });
+
+test("Divide by negative number", () => {
+  expect(calc.divide(-6, 8)).toBe(-0.75);
+});
+
+test("Divide two negatives", () => {
+  expect(calc.divide(-9, -8)).toBe(1.125);
+});
