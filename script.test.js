@@ -23,3 +23,15 @@ test("Subtract negative number", () => {
 test("Subtract two negative numbers", () => {
   expect(calc.subtract(-34, -45)).toBe(11);
 });
+
+test("Multiply positive numbers", () => {
+  expect(calc.multiply(3, 12)).toBe(36);
+});
+
+test("Multiply one negative number", () => {
+  expect(calc.multiply(-6, 5)).toBe(-30);
+});
+
+test("Multiply two negatives", () => {
+  expect(calc.multiply(-7, -8)).toBe(56);
+});
