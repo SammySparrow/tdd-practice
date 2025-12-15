@@ -6,4 +6,12 @@ function capitalise(str) {
   return i.concat("", j);
 }
 
-function reverseString() {}
+function reverseString(str) {
+  let temp = [];
+  let i = -1;
+  while (temp.length < str.length) {
+    temp.push(str.at(i));
+    i--;
+  }
+  return temp.join("");
+}

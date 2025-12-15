@@ -1,5 +1,5 @@
 import { reverseString } from "./script.js";
 
-test("All lower case", () => {
-  expect(reverseString()).toBe("Hello");
+test("Hello to olleH", () => {
+  expect(reverseString("Hello")).toBe("olleH");
 });
