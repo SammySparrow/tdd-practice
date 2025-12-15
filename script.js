@@ -1,4 +1,4 @@
-export { capitalise, reverseString, calc };
+export { capitalise, reverseString, calc, caeserCipher };
 
 function capitalise(str) {
   const i = str.slice(0, 1).toUpperCase();
@@ -34,3 +34,5 @@ class Calculator {
   }
 }
 const calc = new Calculator();
+
+function caeserCipher(str, shift = 3) {}
