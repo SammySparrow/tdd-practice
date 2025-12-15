@@ -1,4 +1,4 @@
-export { capitalise, reverseString, calc, caeserCipher };
+export { capitalise, reverseString, calc, caeserCipher, analyzeArray };
 
 function capitalise(str) {
   const i = str.slice(0, 1).toUpperCase();
@@ -56,3 +56,5 @@ function caeserCipher(str, shift = 3) {
   }
   return arr.join("");
 }
+
+function analyzeArray(arr) {}
