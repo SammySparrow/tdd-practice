@@ -35,4 +35,12 @@ class Calculator {
 }
 const calc = new Calculator();
 
-function caeserCipher(str, shift = 3) {}
+function caeserCipher(str, shift = 3) {
+  let arr = [];
+  let i = 0;
+  while (arr.length < str.length) {
+    arr.push(String.fromCodePoint(str.codePointAt(i) + shift));
+    i++;
+  }
+  return arr.join("");
+}
