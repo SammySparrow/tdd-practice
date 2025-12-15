@@ -57,4 +57,11 @@ function caeserCipher(str, shift = 3) {
   return arr.join("");
 }
 
-function analyzeArray(arr) {}
+function analyzeArray(arr) {
+  const average = arr.reduce((a, b) => a + b) / arr.length;
+  const min = Math.min(...arr);
+  const max = Math.max(...arr);
+  const len = arr.length;
+
+  return { average: average, min: min, max: max, length: len };
+}
