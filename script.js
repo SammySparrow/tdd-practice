@@ -36,10 +36,22 @@ class Calculator {
 const calc = new Calculator();
 
 function caeserCipher(str, shift = 3) {
+  if (shift > 26) throw new Error("Keep shift value under 26");
   let arr = [];
   let i = 0;
   while (arr.length < str.length) {
-    arr.push(String.fromCodePoint(str.codePointAt(i) + shift));
+    let code = str.codePointAt(i) + shift;
+    if (/[a-z]/.test(str.at(i))) {
+      code > 122
+        ? arr.push(String.fromCodePoint(96 + (code - 122)))
+        : arr.push(String.fromCodePoint(code));
+    } else if (/[A-Z]/.test(str.at(i))) {
+      code > 90
+        ? arr.push(String.fromCodePoint(64 + (code - 90)))
+        : arr.push(String.fromCodePoint(code));
+    } else {
+      arr.push(str.at(i));
+    }
     i++;
   }
   return arr.join("");
